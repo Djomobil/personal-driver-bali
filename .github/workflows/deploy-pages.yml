@@ -1,32 +1,26 @@
 name: Deploy to GitHub Pages
 
+# GitHub Pages is configured to serve the gh-pages branch.
+# This workflow mirrors main into gh-pages on every push, which
+# triggers the automatic "pages build and deployment" run.
 on:
   push:
-    branches: [main, "claude/ketut-driver-landing-page-bl9al6"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  mirror-to-gh-pages:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
         with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          fetch-depth: 0
+      - name: Push main to gh-pages
+        run: git push origin HEAD:gh-pages --force
