@@ -1,57 +1,72 @@
 # Ketut — Chauffeur Privé à Bali 🚗🌴
 
-Landing page pour réserver **Ketut**, chauffeur privé à Bali, **en direct via WhatsApp**
-(+62 818‑0556‑8096) — sans agence, sans commission.
+Landing page pour réserver **Ketut**, chauffeur privé à Bali (plus de 20 ans d'expérience),
+**en direct via WhatsApp** (+62 818‑0556‑8096) — sans agence, sans commission.
 
-- 🇬🇧 Page anglaise : `index.html` (cible « private driver Bali »)
-- 🇫🇷 Page française : `fr/index.html` (cible « chauffeur privé Bali »)
-- SEO complet : balises meta, Open Graph, données structurées Schema.org
-  (LocalBusiness/TaxiService + FAQPage), `sitemap.xml`, `robots.txt`, hreflang EN/FR.
-- Réservation : formulaire qui ouvre WhatsApp avec un message pré-rempli. Aucun backend.
+## 🌍 5 langues (anglais par défaut)
 
-## 🚀 Mettre le site en ligne (GitHub Pages)
+| Langue | URL | Cible SEO |
+|---|---|---|
+| 🇬🇧 English (défaut) | `/` | private driver Bali |
+| 🇫🇷 Français | `/fr/` | chauffeur privé Bali |
+| 🇩🇪 Deutsch | `/de/` | privater Fahrer Bali |
+| 🇷🇺 Русский | `/ru/` | личный водитель Бали |
+| 🇨🇳 中文 | `/zh/` | 巴厘岛私人司机 |
 
-1. Fusionner cette branche dans `main` (ouvrir une Pull Request et la merger).
-2. Sur GitHub : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
-3. Le workflow `.github/workflows/deploy-pages.yml` déploie automatiquement à chaque push sur `main`.
-4. Le site sera accessible sur : **https://djomobil.github.io/personal-driver-bali/**
+Ce sont les principaux marchés touristiques de Bali. Chaque langue est une **vraie page
+statique** (pas de traduction JavaScript) : c'est la seule approche que Google indexe
+parfaitement, avec balises `hreflang` croisées, canonical, Open Graph et données
+structurées Schema.org (LocalBusiness/TaxiService + FAQPage) localisées.
 
-> Alternative sans workflow : Settings → Pages → Source : *Deploy from a branch* → `main` / `/ (root)`.
+## 🛠️ Modifier le contenu (système i18n)
+
+Les pages sont **générées** — ne pas éditer les `index.html` à la main :
+
+1. Modifier les textes dans `tools/i18n/<langue>.json` (ou la structure dans `tools/template.html`).
+2. Regénérer : `python3 tools/build.py` (produit les 5 pages + `sitemap.xml`).
+3. Commit + push.
+
+Le formulaire de réservation ouvre WhatsApp avec un message pré-rempli dans la langue de la
+page (`assets/site.js`). Aucun backend : WhatsApp **est** le système de booking — si un jour
+il faut un calendrier ou du paiement en ligne, il suffira de brancher un service externe
+(Calendly, Stripe payment links…) sans refonte.
+
+## 🚀 Mise en ligne (GitHub Pages)
+
+1. Sur GitHub : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
+2. Le workflow `.github/workflows/deploy-pages.yml` déploie à chaque push sur `main`
+   (et sur cette branche de développement, pour valider avant fusion).
+3. Site : **https://djomobil.github.io/personal-driver-bali/**
 
 ## 📸 Ajouter la vraie photo de Ketut
 
-WhatsApp n'expose pas publiquement les photos de profil (API privée), le site utilise donc
-un avatar de secours. Pour afficher la vraie photo :
+WhatsApp n'expose pas publiquement les photos de profil (API privée) ; le site utilise un
+avatar de secours. Pour afficher la vraie photo : enregistrer une image carrée (≥ 600×600 px)
+sous `assets/ketut.jpg`, commit, push. Les 5 pages l'utiliseront automatiquement.
 
-1. Enregistrer la photo de Ketut (idéalement carrée, ≥ 600×600 px) sous `assets/ketut.jpg`.
-2. Commit + push. C'est tout — les deux pages l'utiliseront automatiquement.
+L'image de partage réseaux sociaux (`assets/og-image.png`) est générée depuis
+`tools/og-source.html` (capture Chromium 1200×630).
 
-## 📈 Faire remonter le site dans Google (actions essentielles)
+## 📈 Faire remonter le site dans Google — les vrais leviers
 
-Le code est optimisé, mais le référencement rapide dépend surtout de ces actions **hors code** :
+1. **Google Search Console** : ajouter `https://djomobil.github.io/personal-driver-bali/`,
+   soumettre `sitemap.xml`, demander l'indexation. Levier n°1 pour apparaître vite.
+2. **Fiche Google Business Profile** « Ketut Bali Private Driver » (catégorie service de
+   chauffeur) avec le numéro WhatsApp et le lien du site — indispensable en recherche locale.
+3. **Avis Google** de clients satisfaits — le facteur de classement local le plus puissant.
+4. **Nom de domaine personnalisé** (ex. `ketutbalidriver.com`) : Settings → Pages → Custom
+   domain, puis mettre à jour `BASE` dans `tools/build.py` et relancer le build.
+5. **Liens entrants** : TripAdvisor, forums voyage, groupes Facebook/WeChat/Telegram Bali.
 
-1. **Google Search Console** ([search.google.com/search-console](https://search.google.com/search-console)) :
-   ajouter la propriété `https://djomobil.github.io/personal-driver-bali/`, soumettre `sitemap.xml`
-   et demander l'indexation des 2 pages. C'est le levier n°1 pour apparaître vite.
-2. **Fiche Google Business Profile** pour « Ketut Bali Private Driver » (catégorie : service de
-   chauffeur) avec le numéro WhatsApp et le lien du site — indispensable pour les recherches locales.
-3. **Avis clients** : demander aux clients satisfaits de laisser un avis Google — le facteur de
-   classement local le plus puissant.
-4. **Nom de domaine personnalisé** (optionnel mais recommandé, ex. `ketutbalidriver.com`) :
-   meilleur pour la confiance et le SEO. Configurable dans Settings → Pages → Custom domain
-   (penser à mettre à jour les URLs canoniques dans les HTML et `sitemap.xml`).
-5. **Liens entrants** : profils TripAdvisor / forums voyage / groupes Facebook Bali qui pointent
-   vers le site.
-
-## 🛠️ Structure
+## Structure
 
 ```
-index.html            # Page principale (EN)
-fr/index.html         # Version française
-assets/style.css      # Design (vert jungle / sable / or)
-assets/site.js        # Formulaire → lien WhatsApp pré-rempli
-assets/ketut.jpg      # (à ajouter) vraie photo de Ketut
-assets/ketut-avatar.svg # Avatar de secours
-assets/og-image.png   # Image de partage (réseaux sociaux)
+index.html                  # EN (générée)
+fr/ de/ ru/ zh/index.html   # autres langues (générées)
+tools/template.html         # structure de page commune
+tools/i18n/*.json           # textes par langue
+tools/build.py              # générateur (pages + sitemap)
+tools/og-source.html        # source de l'image de partage
+assets/                     # style.css, site.js, avatar, og-image.png, favicon
 sitemap.xml, robots.txt, 404.html
 ```

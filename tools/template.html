@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="$lang">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$meta_title</title>
+  <meta name="description" content="$meta_desc">
+  <meta name="keywords" content="$meta_keywords">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Ketut">
+  <meta name="geo.region" content="ID-BA">
+  <meta name="geo.placename" content="Bali, Indonesia">
+  <link rel="canonical" href="$canonical">
+$hreflangs
+  <link rel="icon" href="${prefix}assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ketut Bali Private Driver">
+  <meta property="og:title" content="$og_title">
+  <meta property="og:description" content="$og_desc">
+  <meta property="og:url" content="$canonical">
+  <meta property="og:image" content="${base}assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="$og_locale">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$og_title">
+  <meta name="twitter:description" content="$og_desc">
+  <meta name="twitter:image" content="${base}assets/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="${prefix}assets/style.css">
+
+  <!-- Structured data: LocalBusiness / TaxiService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "TaxiService"],
+    "@id": "${base}#business",
+    "name": "Ketut Bali Private Driver",
+    "alternateName": "$sd_altname",
+    "description": "$sd_desc",
+    "url": "$canonical",
+    "telephone": "+6281805568096",
+    "image": "${base}assets/og-image.png",
+    "priceRange": "$$$$",
+    "foundingDate": "2005",
+    "address": { "@type": "PostalAddress", "addressRegion": "Bali", "addressCountry": "ID" },
+    "geo": { "@type": "GeoCoordinates", "latitude": -8.65, "longitude": 115.2166 },
+    "areaServed": [
+      { "@type": "Place", "name": "Bali" },
+      { "@type": "Place", "name": "Ubud" },
+      { "@type": "Place", "name": "Canggu" },
+      { "@type": "Place", "name": "Seminyak" },
+      { "@type": "Place", "name": "Uluwatu" },
+      { "@type": "Place", "name": "Nusa Dua" },
+      { "@type": "Place", "name": "Denpasar Airport (DPS)" }
+    ],
+    "availableLanguage": ["English", "Indonesian"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+6281805568096",
+      "contactType": "reservations",
+      "availableLanguage": ["English", "Indonesian"]
+    },
+    "sameAs": ["https://wa.me/6281805568096"]
+  }
+  </script>
+
+  <!-- FAQ structured data -->
+  <script type="application/ld+json">
+$faq_jsonld
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Ketut Bali Private Driver">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span class="brand-text">Ketut <em>Bali Driver</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">$nav_about</a>
+      <a href="#tours">$nav_tours</a>
+      <a href="#rates">$nav_rates</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <select class="lang-select" aria-label="Language" onchange="location.href=this.value">
+$lang_options
+    </select>
+    <a class="btn btn-wa btn-header" href="https://wa.me/6281805568096?text=$wa_generic" target="_blank" rel="noopener">
+      $waicon WhatsApp
+    </a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">$hero_eyebrow</p>
+        <h1>$hero_h1</h1>
+        <p class="lead">$hero_lead</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa btn-lg" href="https://wa.me/6281805568096?text=$wa_book" target="_blank" rel="noopener">
+            $waicon $cta_book
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#booking">$cta_plan</a>
+        </div>
+        <p class="hero-phone">$hero_phone_label <a href="https://wa.me/6281805568096" target="_blank" rel="noopener">+62 818‑0556‑8096</a></p>
+        <ul class="trust-badges" aria-label="Highlights">
+          <li>🇮🇩 $badge_local</li>
+          <li>🚗 $badge_exp</li>
+          <li>❄️ $badge_car</li>
+          <li>🤝 $badge_direct</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <figure class="driver-card">
+          <img src="${prefix}assets/ketut.jpg" alt="$img_alt" width="360" height="360"
+               loading="eager" onerror="this.onerror=null;this.src='${prefix}assets/ketut-avatar.svg';">
+          <figcaption>
+            <strong>Ketut</strong>
+            <span>$card_role</span>
+            <span class="status-dot">$card_status</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,60 C240,100 480,10 720,40 C960,70 1200,20 1440,50 L1440,90 L0,90 Z" fill="#faf7f0"/>
+    </svg>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="${prefix}assets/ketut.jpg" alt="$img_alt" width="380" height="380" loading="lazy"
+               onerror="this.onerror=null;this.src='${prefix}assets/ketut-avatar.svg';">
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">$about_eyebrow</p>
+          <h2>$about_h2</h2>
+          <p>$about_p1</p>
+          <p>$about_p2</p>
+          <p>$about_p3</p>
+          <div class="stats">
+            <div class="stat"><b>20+</b><span>$stat_years</span></div>
+            <div class="stat"><b>100%</b><span>$stat_private</span></div>
+            <div class="stat"><b>7/7</b><span>$stat_avail</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <p class="eyebrow center">$svc_eyebrow</p>
+      <h2 class="center">$svc_h2</h2>
+      <div class="cards-3">
+        <article class="card">
+          <div class="card-ico">✈️</div>
+          <h3>$svc1_h3</h3>
+          <p>$svc1_p</p>
+        </article>
+        <article class="card">
+          <div class="card-ico">🚗</div>
+          <h3>$svc2_h3</h3>
+          <p>$svc2_p</p>
+        </article>
+        <article class="card">
+          <div class="card-ico">🗺️</div>
+          <h3>$svc3_h3</h3>
+          <p>$svc3_p</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOURS ============ -->
+  <section class="section" id="tours">
+    <div class="container">
+      <p class="eyebrow center">$tours_eyebrow</p>
+      <h2 class="center">$tours_h2</h2>
+      <div class="cards-4">
+        <article class="tour">
+          <div class="tour-head t-ubud"><span>$tour1_h3</span></div>
+          <p>$tour1_p</p>
+        </article>
+        <article class="tour">
+          <div class="tour-head t-uluwatu"><span>$tour2_h3</span></div>
+          <p>$tour2_p</p>
+        </article>
+        <article class="tour">
+          <div class="tour-head t-east"><span>$tour3_h3</span></div>
+          <p>$tour3_p</p>
+        </article>
+        <article class="tour">
+          <div class="tour-head t-north"><span>$tour4_h3</span></div>
+          <p>$tour4_p</p>
+        </article>
+      </div>
+      <p class="center note">$tours_note</p>
+
+      <h2 class="center subheading">$multi_h2</h2>
+      <div class="cards-3">
+        <article class="card">
+          <span class="day-badge">$multi1_days</span>
+          <h3>$multi1_h3</h3>
+          <p>$multi1_p</p>
+        </article>
+        <article class="card">
+          <span class="day-badge">$multi2_days</span>
+          <h3>$multi2_h3</h3>
+          <p>$multi2_p</p>
+        </article>
+        <article class="card">
+          <span class="day-badge">$multi3_days</span>
+          <h3>$multi3_h3</h3>
+          <p>$multi3_p</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RATES ============ -->
+  <section class="section section-alt" id="rates">
+    <div class="container">
+      <p class="eyebrow center">$rates_eyebrow</p>
+      <h2 class="center">$rates_h2</h2>
+      <div class="price-cards">
+        <article class="price-card">
+          <h3>$price1_h3</h3>
+          <p class="price">IDR 250K <small>$price1_unit</small></p>
+          <ul><li>$price1_f1</li><li>$price1_f2</li><li>$price1_f3</li></ul>
+          <a class="btn btn-wa" href="https://wa.me/6281805568096?text=$wa_price1" target="_blank" rel="noopener">$price_cta</a>
+        </article>
+        <article class="price-card">
+          <h3>$price2_h3</h3>
+          <p class="price">IDR 450K <small>$price2_unit</small></p>
+          <ul><li>$price2_f1</li><li>$price2_f2</li><li>$price2_f3</li></ul>
+          <a class="btn btn-wa" href="https://wa.me/6281805568096?text=$wa_price2" target="_blank" rel="noopener">$price_cta</a>
+        </article>
+        <article class="price-card featured">
+          <span class="tag">$price3_tag</span>
+          <h3>$price3_h3</h3>
+          <p class="price">IDR 700K <small>$price3_unit</small></p>
+          <ul><li>$price3_f1</li><li>$price3_f2</li><li>$price3_f3</li></ul>
+          <a class="btn btn-wa" href="https://wa.me/6281805568096?text=$wa_price3" target="_blank" rel="noopener">$price_cta</a>
+        </article>
+        <article class="price-card">
+          <h3>$price4_h3</h3>
+          <p class="price">IDR 650K <small>$price4_unit</small></p>
+          <ul><li>$price4_f1</li><li>$price4_f2</li><li>$price4_f3</li></ul>
+          <a class="btn btn-wa" href="https://wa.me/6281805568096?text=$wa_price4" target="_blank" rel="noopener">$price_cta</a>
+        </article>
+      </div>
+      <p class="center note">$rates_note</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY DIRECT ============ -->
+  <section class="section section-dark" id="why">
+    <div class="container">
+      <h2 class="center light">$why_h2</h2>
+      <div class="cards-3 why-cards">
+        <div class="why">
+          <h3>💰 $why1_h3</h3>
+          <p>$why1_p</p>
+        </div>
+        <div class="why">
+          <h3>💬 $why2_h3</h3>
+          <p>$why2_p</p>
+        </div>
+        <div class="why">
+          <h3>🔄 $why3_h3</h3>
+          <p>$why3_p</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="section" id="booking">
+    <div class="container booking-grid">
+      <div>
+        <p class="eyebrow">$book_eyebrow</p>
+        <h2>$book_h2</h2>
+        <ol class="steps">
+          <li>$book_s1</li>
+          <li>$book_s2</li>
+          <li>$book_s3</li>
+        </ol>
+        <p class="note">$book_note</p>
+      </div>
+      <form class="booking-form" id="bookingForm" aria-label="Booking request form">
+        <h3>$form_h3</h3>
+        <label>$form_name
+          <input type="text" id="bf-name" name="name" placeholder="$form_name_ph" autocomplete="name" required>
+        </label>
+        <div class="form-row">
+          <label>$form_date
+            <input type="date" id="bf-date" name="date" required>
+          </label>
+          <label>$form_pax
+            <input type="number" id="bf-pax" name="pax" min="1" max="12" value="2" required>
+          </label>
+        </div>
+        <label>$form_pickup
+          <input type="text" id="bf-pickup" name="pickup" placeholder="$form_pickup_ph">
+        </label>
+        <label>$form_service
+          <select id="bf-service" name="service">
+            <option>$form_opt1</option>
+            <option>$form_opt2</option>
+            <option>$form_opt3</option>
+            <option>$form_opt4</option>
+            <option>$form_opt5</option>
+          </select>
+        </label>
+        <label>$form_msg
+          <textarea id="bf-msg" name="message" rows="2" placeholder="$form_msg_ph"></textarea>
+        </label>
+        <button type="submit" class="btn btn-wa btn-lg btn-block">
+          $waicon $form_submit
+        </button>
+        <p class="tiny">$form_tiny</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section-alt" id="faq">
+    <div class="container narrow">
+      <p class="eyebrow center">$faq_eyebrow</p>
+      <h2 class="center">$faq_h2</h2>
+$faq_html
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section final-cta">
+    <div class="container center">
+      <h2>$final_h2</h2>
+      <p class="lead">$final_lead</p>
+      <a class="btn btn-wa btn-xl" href="https://wa.me/6281805568096?text=$wa_book" target="_blank" rel="noopener">
+        $waicon WhatsApp +62 818‑0556‑8096
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="brand-text">Ketut <em>Bali Driver</em></p>
+      <p>$footer_tagline</p>
+    </div>
+    <div>
+      <p><strong>$footer_contact</strong></p>
+      <p><a href="https://wa.me/6281805568096" target="_blank" rel="noopener">WhatsApp: +62 818‑0556‑8096</a></p>
+      <p>Bali, Indonesia</p>
+    </div>
+    <div>
+      <p><strong>$footer_areas</strong></p>
+      <p>Canggu · Seminyak · Kuta · Ubud · Uluwatu · Nusa Dua · Sanur · DPS Airport</p>
+      <p>$footer_langs</p>
+    </div>
+  </div>
+  <p class="center tiny">© <span id="year">2026</span> Ketut Bali Private Driver — $footer_claim</p>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281805568096?text=$wa_book" target="_blank" rel="noopener" aria-label="WhatsApp">
+  $waicon_big
+</a>
+
+<script src="${prefix}assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1200px; height: 630px; overflow: hidden; position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background:
+      radial-gradient(900px 420px at 88% -12%, rgba(201,151,63,0.34), transparent 62%),
+      radial-gradient(760px 430px at 2% 112%, rgba(27,106,83,0.6), transparent 60%),
+      linear-gradient(160deg, #0e3b2e 0%, #14503f 55%, #0c3227 100%);
+  }
+  .terraces { position: absolute; bottom: 0; left: 0; width: 100%; height: 210px; }
+  .content { position: absolute; inset: 0; padding: 64px 70px; display: flex; align-items: center; gap: 48px; }
+  .left { flex: 1.25; }
+  .eyebrow { color: #c9973f; font-weight: 800; letter-spacing: 3.5px; font-size: 21px; text-transform: uppercase; margin-bottom: 18px; }
+  h1 { font-family: "Fraunces", serif; font-weight: 700; color: #faf7f0; font-size: 74px; line-height: 1.06; letter-spacing: -0.5px; }
+  h1 .accent { color: #e0b464; font-style: italic; }
+  .sub { color: rgba(250,247,240,0.85); font-size: 26px; font-weight: 500; margin-top: 22px; }
+  .pill { display: inline-flex; align-items: center; gap: 14px; margin-top: 34px;
+    background: #25d366; color: #fff; font-weight: 800; font-size: 28px;
+    padding: 18px 34px; border-radius: 999px;
+    box-shadow: 0 12px 34px rgba(37,211,102,0.4); }
+  .pill svg { width: 34px; height: 34px; }
+  .badges { display: flex; gap: 26px; margin-top: 30px; color: rgba(250,247,240,0.82); font-size: 19px; font-weight: 700; }
+  .card { flex: none; width: 330px; background: rgba(250,247,240,0.08);
+    border: 1.5px solid rgba(250,247,240,0.22); border-radius: 28px; padding: 18px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.35); backdrop-filter: blur(4px); }
+  .card img { width: 100%; border-radius: 18px; display: block; }
+  .card .name { font-family: "Fraunces", serif; color: #faf7f0; font-size: 30px; font-weight: 700; margin: 14px 6px 2px; }
+  .card .role { color: rgba(250,247,240,0.75); font-size: 17px; font-weight: 600; margin: 0 6px 6px; }
+</style>
+</head>
+<body>
+  <svg class="terraces" viewBox="0 0 1200 210" preserveAspectRatio="none">
+    <path d="M0,90 C200,60 420,130 620,105 C820,80 1020,130 1200,100 L1200,210 L0,210 Z" fill="#0f4234"/>
+    <path d="M0,140 C240,115 460,170 680,150 C900,130 1080,165 1200,150 L1200,210 L0,210 Z" fill="#0b342a"/>
+    <path d="M0,185 C300,165 620,200 900,185 C1040,178 1140,188 1200,183 L1200,210 L0,210 Z" fill="#082a20"/>
+  </svg>
+  <div class="content">
+    <div class="left">
+      <div class="eyebrow">Book direct · No agency fees</div>
+      <h1>Ketut,<br>your <span class="accent">Private Driver</span> in Bali</h1>
+      <div class="sub">Airport transfers · Day tours · Multi-day trips</div>
+      <div class="pill">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.66 15L2 22l5.16-1.32A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-2.96-.4-4.24-1.16l-.3-.18-3.06.79.81-2.98-.2-.31A8.16 8.16 0 1 1 12 20.2Zm4.48-6.1c-.24-.12-1.45-.71-1.67-.8-.22-.08-.39-.12-.55.13-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06a6.7 6.7 0 0 1-3.35-2.93c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.43.06-.65.3-.22.25-.85.83-.85 2.03s.87 2.36 1 2.52c.12.16 1.72 2.62 4.16 3.68.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.45-.6 1.65-1.17.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+        +62 818-0556-8096
+      </div>
+      <div class="badges"><span>🇮🇩 Local driver</span><span>🚗 20+ years</span><span>❄️ AC car</span></div>
+    </div>
+    <div class="card">
+      <img src="../assets/ketut-avatar.svg" alt="">
+      <div class="name">Ketut</div>
+      <div class="role">Private driver — Bali, Indonesia</div>
+    </div>
+  </div>
+</body>
+</html>
