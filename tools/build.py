@@ -44,6 +44,39 @@ IMAGES = [
 ]
 
 
+# iconic-places gallery: shown only for photos that actually exist in assets/photos/
+GALLERY = ["tanah-lot", "lempuyang", "tegalalang", "sekumpul",
+           "monkey-forest", "melasti", "handara", "kelingking"]
+
+
+def gallery_section(t: dict, prefix: str) -> str:
+    g = t.get("gallery") or {}
+    items = []
+    for name in GALLERY:
+        if (ROOT / "assets" / "photos" / f"{name}.jpg").exists():
+            caption = (g.get("items") or {}).get(name, name)
+            items.append(
+                '        <figure class="ph">\n'
+                f'          <img src="{prefix}assets/photos/{name}.jpg" alt="{caption}" loading="lazy">\n'
+                f"          <figcaption>{caption}</figcaption>\n"
+                "        </figure>"
+            )
+    if not items:
+        return ""
+    return (
+        '  <!-- ============ ICONIC PLACES ============ -->\n'
+        '  <section class="section" id="gallery">\n'
+        '    <div class="container">\n'
+        f'      <p class="eyebrow center">{g.get("eyebrow", "")}</p>\n'
+        f'      <h2 class="center">{g.get("h2", "")}</h2>\n'
+        '      <div class="gallery-grid">\n'
+        + "\n".join(items) + "\n"
+        "      </div>\n"
+        "    </div>\n"
+        "  </section>\n"
+    )
+
+
 def image_sources() -> dict:
     out = {}
     for key, photo, svg in IMAGES:
@@ -105,6 +138,8 @@ def build():
 
         values = dict(t)
         values.pop("faq")
+        values.pop("gallery", None)
+        values["gallery_section"] = gallery_section(t, prefix)
         for key in ("wa_generic", "wa_book", "wa_price1", "wa_price2", "wa_price3", "wa_price4"):
             values[key] = quote(t[key], safe="")
         values.update(image_sources())

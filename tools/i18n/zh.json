@@ -9,18 +9,15 @@
   "og_desc": "值得信赖的巴厘岛本地司机，20多年驾驶经验。机场接送、私人一日游、多日行程。通过WhatsApp直接预订，无中间商。",
   "sd_altname": "Ketut — 巴厘岛私人司机",
   "sd_desc": "巴厘岛私人司机，拥有20多年经验：机场接送、全天包车、一日游及多日环岛行程。通过WhatsApp直接预订，无旅行社佣金。",
-
   "nav_about": "关于司机",
   "nav_tours": "行程推荐",
   "nav_rates": "价格",
-
   "wa_generic": "您好Ketut！我在网上看到您的网站，想在巴厘岛预订司机。",
   "wa_book": "您好Ketut！我想在巴厘岛预订司机。",
   "wa_price1": "您好Ketut！我想预订机场接送。",
   "wa_price2": "您好Ketut！我想预订半天包车。",
   "wa_price3": "您好Ketut！我想预订全天包车。",
   "wa_price4": "您好Ketut！我对巴厘岛多日游感兴趣。",
-
   "hero_eyebrow": "本地司机 · 直接预订 · 无中介费",
   "hero_h1": "您在巴厘岛值得信赖的<span class=\"accent\">私人司机</span>",
   "hero_lead": "您好，我是<strong>Ketut</strong>——拥有20多年经验的巴厘岛本地司机。跳过旅行社和他们的佣金：直接向我预订机场接送、一日游和多日行程，乘坐舒适的空调轿车出行。",
@@ -34,7 +31,6 @@
   "img_alt": "Ketut，巴厘岛私人司机",
   "card_role": "私人司机 — 印度尼西亚巴厘岛",
   "card_status": "WhatsApp消息通常几分钟内回复",
-
   "about_eyebrow": "认识您的司机",
   "about_h2": "20年巴厘岛道路经验，一张亲切的面孔",
   "about_p1": "我是<strong>Ketut</strong>，土生土长的巴厘岛人。<strong>20多年来</strong>，我载着来自世界各地的旅行者游览我的家乡——从蜜月情侣到带孩子的家庭，再到结伴出游的朋友。",
@@ -43,7 +39,6 @@
   "stat_years": "年驾驶经验",
   "stat_private": "私人定制行程",
   "stat_avail": "全天候服务",
-
   "svc_eyebrow": "服务项目",
   "svc_h2": "巴厘岛私人司机服务",
   "svc1_h3": "机场接送",
@@ -52,7 +47,6 @@
   "svc2_p": "轿车+司机为您服务最多10小时，油费和停车费全包。行程由您决定——寺庙、瀑布、梯田、海滩——也可以让我为您推荐。",
   "svc3_h3": "定制游 & 多日游",
   "svc3_p": "从单日游到数天的环岛行程：我会和您一起规划路线、酒店间的接驳，以及游客罕至的小众美景。",
-
   "tours_eyebrow": "行程灵感",
   "tours_h2": "热门一日游",
   "tour1_h3": "乌布 & 梯田",
@@ -64,7 +58,6 @@
   "tour4_h3": "北部瀑布之旅",
   "tour4_p": "Sekumpul或Gitgit瀑布、水神庙Ulun Danu Beratan、Handara之门、入选联合国教科文组织的Jatiluwih梯田。",
   "tours_note": "所有行程都是100%私人定制——景点可自由组合。告诉我您最想看什么就好。",
-
   "multi_h2": "多日游行程灵感",
   "multi1_days": "2天",
   "multi1_h3": "东部巴厘 & 日出之旅",
@@ -75,7 +68,6 @@
   "multi3_days": "4天以上",
   "multi3_h3": "环岛游，按您的方式",
   "multi3_p": "西巴厘国家公园、云雾缭绕的Munduk山区、Amed浮潜、佩尼达岛一日船游……告诉我您的日期，我们一起设计完整路线。",
-
   "rates_eyebrow": "价格透明",
   "rates_h2": "简单实在的价格",
   "price1_h3": "机场接送",
@@ -101,7 +93,6 @@
   "price4_f3": "全岛酒店间接驳",
   "price_cta": "咨询报价",
   "rates_note": "价格包含车辆、司机、油费和停车费。具体报价取决于距离和行程——欢迎在WhatsApp上咨询，无需承诺。门票和餐费不包含在内。",
-
   "why_h2": "为什么直接预订而不通过旅行社？",
   "why1_h3": "价格更优",
   "why1_p": "旅行社和平台会在司机价格上加收20–40%的佣金。直接预订意味着您花得更少——我也能获得公平的报酬。",
@@ -109,14 +100,12 @@
   "why2_p": "没有客服中心。您发消息，我亲自回复。在您抵达巴厘岛之前，我们就一起规划好行程。",
   "why3_h3": "真正的灵活性",
   "why3_p": "航班延误？想在瀑布多待一会儿？没有死板的时间表，也没有改期费——我们随时调整。",
-
   "book_eyebrow": "轻松预订",
   "book_h2": "2分钟规划您的行程",
   "book_s1": "<strong>填写迷你表单</strong>（或直接给我发消息），告诉我日期和您想做的事。",
   "book_s2": "<strong>在WhatsApp上沟通</strong>——我确认档期、行程和确切价格。",
   "book_s3": "<strong>放心出发</strong>——我会准时到达，车上为您备好冰水。",
   "book_note": "无订金，网站不收取任何费用。您直接付款给Ketut。",
-
   "form_h3": "预订申请",
   "form_name": "您的姓名",
   "form_name_ph": "王小明",
@@ -134,7 +123,6 @@
   "form_msg_ph": "例如：乌布瀑布一日游、需要婴儿座椅……",
   "form_submit": "通过WhatsApp发送",
   "form_tiny": "将打开WhatsApp并自动填好您的申请——本网站不存储任何信息。",
-
   "faq_eyebrow": "常见问题",
   "faq_h2": "常见问题解答",
   "faq": [
@@ -163,12 +151,24 @@
       "a": "当然——多日游是我的最爱。我会帮您规划路线（东部日出、北部湖泊、Munduk、Amed等），在酒店之间接送您，行程可以每天灵活调整。3天以上享受每日优惠价。"
     }
   ],
-
   "final_h2": "准备好探索巴厘岛了吗？",
   "final_lead": "现在就给我发消息——通常几分钟内回复。",
-
   "footer_tagline": "巴厘岛全岛私人司机和包车游，印度尼西亚。<br>机场接送 · 一日游 · 多日游。",
   "footer_contact": "联系方式",
   "footer_areas": "服务区域",
-  "footer_claim": "直接预订，畅游无忧。"
+  "footer_claim": "直接预订，畅游无忧。",
+  "gallery": {
+    "eyebrow": "巴厘岛地标",
+    "h2": "人人向往的打卡胜地",
+    "items": {
+      "tanah-lot": "海神庙（Tanah Lot）",
+      "lempuyang": "天空之门（Lempuyang）",
+      "tegalalang": "德格拉朗梯田",
+      "sekumpul": "Sekumpul瀑布",
+      "monkey-forest": "乌布圣猴森林",
+      "melasti": "Melasti海滩",
+      "handara": "Handara之门",
+      "kelingking": "精灵坠崖（佩尼达岛）"
+    }
+  }
 }

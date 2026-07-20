@@ -9,18 +9,15 @@
   "og_desc": "Vertrauenswürdiger balinesischer Fahrer, über 20 Jahre unterwegs. Flughafentransfers, private Tagestouren, Mehrtagesreisen. Direkt per WhatsApp buchen.",
   "sd_altname": "Ketut — Privater Fahrer Bali",
   "sd_desc": "Privater englischsprachiger Fahrer auf Bali mit über 20 Jahren Erfahrung: Flughafentransfers, Ganztagestouren und mehrtägige Inselrundfahrten. Direkte Buchung über WhatsApp ohne Agenturprovision.",
-
   "nav_about": "Über mich",
   "nav_tours": "Touren",
   "nav_rates": "Preise",
-
   "wa_generic": "Hallo Ketut! Ich habe Ihre Website gefunden und möchte einen Fahrer auf Bali buchen.",
   "wa_book": "Hallo Ketut! Ich möchte einen Fahrer auf Bali buchen.",
   "wa_price1": "Hallo Ketut! Ich möchte einen Flughafentransfer buchen.",
   "wa_price2": "Hallo Ketut! Ich möchte eine Halbtagestour buchen.",
   "wa_price3": "Hallo Ketut! Ich möchte eine Ganztagestour buchen.",
   "wa_price4": "Hallo Ketut! Ich interessiere mich für eine mehrtägige Rundreise auf Bali.",
-
   "hero_eyebrow": "Lokaler Fahrer · Direkt buchen · Ohne Provision",
   "hero_h1": "Ihr zuverlässiger <span class=\"accent\">privater Fahrer</span> auf Bali",
   "hero_lead": "Hallo, ich bin <strong>Ketut</strong> — ein balinesischer Fahrer mit über 20 Jahren Erfahrung. Sparen Sie sich Agenturen und deren Provisionen: Buchen Sie mich direkt für Flughafentransfers, Tagestouren und mehrtägige Reisen — in einem komfortablen, klimatisierten Auto.",
@@ -34,7 +31,6 @@
   "img_alt": "Ketut, privater Fahrer auf Bali",
   "card_role": "Privater Fahrer — Bali, Indonesien",
   "card_status": "Antwortet auf WhatsApp meist innerhalb von Minuten",
-
   "about_eyebrow": "Ihr Fahrer",
   "about_h2": "20 Jahre auf Balis Straßen, ein vertrautes Gesicht",
   "about_p1": "Ich bin <strong>Ketut</strong>, geboren und aufgewachsen auf Bali. Seit <strong>über 20 Jahren</strong> zeige ich Reisenden aus aller Welt meine Insel — von Hochzeitsreisenden über Familien mit Kindern bis zu Freundesgruppen.",
@@ -43,7 +39,6 @@
   "stat_years": "Jahre Erfahrung",
   "stat_private": "privat & individuell",
   "stat_avail": "verfügbar, Tag & Nacht",
-
   "svc_eyebrow": "Mein Angebot",
   "svc_h2": "Privater Fahrservice auf Bali",
   "svc1_h3": "Flughafentransfers",
@@ -52,7 +47,6 @@
   "svc2_p": "Auto + Fahrer bis zu 10 Stunden zu Ihrer Verfügung. Benzin und Parkgebühren inklusive. Sie bestimmen die Route — Tempel, Wasserfälle, Reisterrassen, Strände — oder ich schlage Ihnen eine vor.",
   "svc3_h3": "Individuelle & Mehrtagesreisen",
   "svc3_p": "Vom einzelnen Ausflug bis zur kompletten Inselrundfahrt über mehrere Tage: Ich plane mit Ihnen die Route, die Hotel-Logistik und die Geheimtipps abseits der Massen.",
-
   "tours_eyebrow": "Ideen für Ihre Tage",
   "tours_h2": "Beliebte Tagestouren",
   "tour1_h3": "Ubud & Reisterrassen",
@@ -64,7 +58,6 @@
   "tour4_h3": "Wasserfälle im Norden",
   "tour4_p": "Sekumpul- oder Gitgit-Wasserfälle, Seetempel Ulun Danu Beratan, Handara Gate, UNESCO-Reisterrassen von Jatiluwih.",
   "tours_note": "Alle Touren sind 100 % privat und individuell anpassbar — kombinieren Sie die Stopps nach Belieben. Sagen Sie mir einfach, was Sie sehen möchten.",
-
   "multi_h2": "Ideen für Mehrtagesreisen",
   "multi1_days": "2 Tage",
   "multi1_h3": "Ost-Bali & Sonnenaufgang",
@@ -75,7 +68,6 @@
   "multi3_days": "4+ Tage",
   "multi3_h3": "Einmal um die Insel, nach Ihren Wünschen",
   "multi3_p": "Nationalpark West-Bali, die nebligen Berge von Munduk, Schnorcheln in Amed, ein Bootstag nach Nusa Penida… Nennen Sie mir Ihre Daten und ich plane die komplette Route mit Ihnen.",
-
   "rates_eyebrow": "Transparente Preise",
   "rates_h2": "Einfache, ehrliche Preise",
   "price1_h3": "Flughafentransfer",
@@ -101,7 +93,6 @@
   "price4_f3": "Von Hotel zu Hotel über die Insel",
   "price_cta": "Angebot anfragen",
   "rates_note": "Preise inklusive Auto, Fahrer, Benzin und Parkgebühren. Das genaue Angebot hängt von Entfernung und Route ab — fragen Sie mich unverbindlich per WhatsApp. Eintrittskarten und Mahlzeiten nicht inbegriffen.",
-
   "why_h2": "Warum direkt buchen statt über eine Agentur?",
   "why1_h3": "Besserer Preis",
   "why1_p": "Agenturen und Apps schlagen 20–40 % Provision auf den Fahrerpreis auf. Bei Direktbuchung zahlen Sie weniger — und ich werde fair bezahlt.",
@@ -109,14 +100,12 @@
   "why2_p": "Kein Callcenter. Sie schreiben mir, ich antworte. Wir planen Ihre Route gemeinsam, noch bevor Sie auf Bali landen.",
   "why3_h3": "Echte Flexibilität",
   "why3_p": "Flug verspätet? Möchten Sie länger am Wasserfall bleiben? Keine starren Zeitpläne, keine Änderungsgebühren — wir passen uns einfach an.",
-
   "book_eyebrow": "Einfache Buchung",
   "book_h2": "Planen Sie Ihre Reise in 2 Minuten",
   "book_s1": "<strong>Füllen Sie das Mini-Formular aus</strong> (oder schreiben Sie mir einfach) mit Ihren Daten und Wünschen.",
   "book_s2": "<strong>Chatten wir auf WhatsApp</strong> — ich bestätige Verfügbarkeit, Route und den genauen Preis.",
   "book_s3": "<strong>Entspannen Sie sich</strong> — ich bin pünktlich da, mit einer kalten Flasche Wasser für Sie.",
   "book_note": "Keine Anzahlung, keine Vorauszahlung über die Website. Sie bezahlen Ketut direkt.",
-
   "form_h3": "Buchungsanfrage",
   "form_name": "Ihr Name",
   "form_name_ph": "Max Mustermann",
@@ -134,7 +123,6 @@
   "form_msg_ph": "z. B. Ubud-Tour mit Wasserfällen, Kindersitz benötigt…",
   "form_submit": "Per WhatsApp senden",
   "form_tiny": "Öffnet WhatsApp mit Ihrer vorausgefüllten Anfrage — auf dieser Website wird nichts gespeichert.",
-
   "faq_eyebrow": "Gut zu wissen",
   "faq_h2": "Häufige Fragen",
   "faq": [
@@ -163,12 +151,24 @@
       "a": "Unbedingt — Mehrtagesreisen sind meine Lieblingsdisziplin. Ich helfe bei der Routenplanung (Sonnenaufgang im Osten, die Seen im Norden, Munduk, Amed und mehr), fahre Sie von Hotel zu Hotel und wir passen das Programm Tag für Tag an. Ab 3 Tagen gilt ein reduzierter Tagespreis."
     }
   ],
-
   "final_h2": "Bereit, Bali zu entdecken?",
   "final_lead": "Schreiben Sie mir jetzt — ich antworte meist innerhalb von Minuten.",
-
   "footer_tagline": "Privater Fahrer & Tagestouren auf ganz Bali, Indonesien.<br>Flughafentransfers · Tagestouren · Mehrtagesreisen.",
   "footer_contact": "Kontakt",
   "footer_areas": "Bediente Gebiete",
-  "footer_claim": "Direkt buchen, besser reisen."
+  "footer_claim": "Direkt buchen, besser reisen.",
+  "gallery": {
+    "eyebrow": "Balis Ikonen",
+    "h2": "Die Orte, von denen alle träumen",
+    "items": {
+      "tanah-lot": "Tanah Lot — Tempel im Meer",
+      "lempuyang": "Lempuyang — Gates of Heaven",
+      "tegalalang": "Reisterrassen von Tegalalang",
+      "sekumpul": "Sekumpul-Wasserfall",
+      "monkey-forest": "Affenwald von Ubud",
+      "melasti": "Melasti-Strand",
+      "handara": "Handara-Tor",
+      "kelingking": "Kelingking — Nusa Penida"
+    }
+  }
 }

@@ -9,18 +9,15 @@
   "og_desc": "Trusted Balinese driver, 20+ years on the road. Airport transfers, private day tours, multi-day trips. Book direct on WhatsApp — no middlemen.",
   "sd_altname": "Ketut — Personal Driver Bali",
   "sd_desc": "Private English-speaking driver in Bali with over 20 years of experience: airport transfers, full-day private charters, day tours and multi-day island trips. Book directly via WhatsApp with no agency commission.",
-
   "nav_about": "About",
   "nav_tours": "Tours",
   "nav_rates": "Rates",
-
   "wa_generic": "Hi Ketut! I found your website and I'd like to book a driver in Bali.",
   "wa_book": "Hi Ketut! I'd like to book a driver in Bali.",
   "wa_price1": "Hi Ketut! I'd like to book an airport transfer.",
   "wa_price2": "Hi Ketut! I'd like to book a half-day charter.",
   "wa_price3": "Hi Ketut! I'd like to book a full-day charter.",
   "wa_price4": "Hi Ketut! I'm interested in a multi-day trip around Bali.",
-
   "hero_eyebrow": "Local driver · Book direct · No agency fees",
   "hero_h1": "Your Trusted <span class=\"accent\">Private Driver</span> in Bali",
   "hero_lead": "Hi, I'm <strong>Ketut</strong> — a Balinese driver with more than 20 years of experience. Skip the agencies and their commissions: book me directly for airport transfers, day tours and multi-day trips, all in a comfortable air-conditioned car.",
@@ -34,7 +31,6 @@
   "img_alt": "Ketut, private driver in Bali",
   "card_role": "Private driver — Bali, Indonesia",
   "card_status": "Usually replies within minutes on WhatsApp",
-
   "about_eyebrow": "Meet your driver",
   "about_h2": "20 Years of Bali Roads, One Friendly Face",
   "about_p1": "I'm <strong>Ketut</strong>, born and raised in Bali. For <strong>more than 20 years</strong> I've been driving travelers from all over the world around my island — from honeymooners to families with kids and groups of friends.",
@@ -43,7 +39,6 @@
   "stat_years": "years of experience",
   "stat_private": "private & customizable",
   "stat_avail": "available, day & night",
-
   "svc_eyebrow": "What I offer",
   "svc_h2": "Private Driver Services in Bali",
   "svc1_h3": "Airport Transfers",
@@ -52,7 +47,6 @@
   "svc2_p": "Car + driver at your service up to 10 hours. Petrol and parking included. You decide the itinerary — temples, waterfalls, rice terraces, beaches — or let me suggest one.",
   "svc3_h3": "Custom & Multi-Day Trips",
   "svc3_p": "From a single excursion to a full around-the-island itinerary over several days: I plan the route, the hotels' logistics and the hidden gems with you.",
-
   "tours_eyebrow": "Ideas for your days",
   "tours_h2": "Popular Day Tours",
   "tour1_h3": "Ubud & Rice Terraces",
@@ -64,7 +58,6 @@
   "tour4_h3": "North Bali Waterfalls",
   "tour4_p": "Sekumpul or Gitgit waterfalls, Ulun Danu Beratan lake temple, Handara Gate, Jatiluwih UNESCO rice terraces.",
   "tours_note": "All tours are 100% private and customizable — mix and match any stops. Just tell me what you'd love to see.",
-
   "multi_h2": "Multi-Day Trip Ideas",
   "multi1_days": "2 days",
   "multi1_h3": "East Bali & Sunrise Escape",
@@ -75,7 +68,6 @@
   "multi3_days": "4+ days",
   "multi3_h3": "Around the Island, Your Way",
   "multi3_p": "West Bali's national park, Munduk's misty mountains, Amed's snorkeling, a Nusa Penida boat day… Tell me your dates and I'll design the full route with you.",
-
   "rates_eyebrow": "Transparent pricing",
   "rates_h2": "Simple, Honest Rates",
   "price1_h3": "Airport Transfer",
@@ -101,7 +93,6 @@
   "price4_f3": "Hotel-to-hotel across Bali",
   "price_cta": "Get a quote",
   "rates_note": "Prices include car, driver, petrol and parking. The exact quote depends on distance and itinerary — ask me on WhatsApp, no obligation. Entrance tickets and meals not included.",
-
   "why_h2": "Why book direct instead of an agency?",
   "why1_h3": "Better price",
   "why1_p": "Agencies and apps take 20–40% commission on top of the driver's rate. Booking direct means you pay less — and I earn fairly.",
@@ -109,14 +100,12 @@
   "why2_p": "No call centers. You message me, I answer. We plan your itinerary together before you even land in Bali.",
   "why3_h3": "Real flexibility",
   "why3_p": "Flight delayed? Want to stay longer at a waterfall? No rigid schedules or change fees — we simply adapt.",
-
   "book_eyebrow": "Easy booking",
   "book_h2": "Plan Your Trip in 2 Minutes",
   "book_s1": "<strong>Fill the mini-form</strong> (or just message me) with your dates and what you'd like to do.",
   "book_s2": "<strong>Chat on WhatsApp</strong> — I confirm availability, itinerary and exact price.",
   "book_s3": "<strong>Relax</strong> — I'll be there, on time, with a cold bottle of water waiting for you.",
   "book_note": "No deposit, no prepayment through the site. You pay Ketut directly.",
-
   "form_h3": "Request a booking",
   "form_name": "Your name",
   "form_name_ph": "Jane Doe",
@@ -134,7 +123,6 @@
   "form_msg_ph": "e.g. Ubud tour with waterfalls, baby seat needed…",
   "form_submit": "Send via WhatsApp",
   "form_tiny": "Opens WhatsApp with your request pre-filled — nothing is stored on this site.",
-
   "faq_eyebrow": "Good to know",
   "faq_h2": "Frequently Asked Questions",
   "faq": [
@@ -163,12 +151,24 @@
       "a": "Absolutely — multi-day trips are my favorite. I help you plan the route (East Bali sunrise, the northern lakes, Munduk, Amed and more), drive you hotel-to-hotel and adjust the plan day by day. The day rate is discounted from 3 days."
     }
   ],
-
   "final_h2": "Ready to explore Bali?",
   "final_lead": "Send me a message now — I usually reply within minutes.",
-
   "footer_tagline": "Private driver & day tours across Bali, Indonesia.<br>Airport transfers · Day tours · Multi-day trips.",
   "footer_contact": "Contact",
   "footer_areas": "Areas served",
-  "footer_claim": "Book direct, travel better."
+  "footer_claim": "Book direct, travel better.",
+  "gallery": {
+    "eyebrow": "Bali's icons",
+    "h2": "The Places Everyone Dreams Of",
+    "items": {
+      "tanah-lot": "Tanah Lot — temple on the sea",
+      "lempuyang": "Lempuyang — Gates of Heaven",
+      "tegalalang": "Tegalalang rice terraces",
+      "sekumpul": "Sekumpul waterfall",
+      "monkey-forest": "Ubud Sacred Monkey Forest",
+      "melasti": "Melasti Beach",
+      "handara": "Handara Gate",
+      "kelingking": "Kelingking — Nusa Penida"
+    }
+  }
 }
