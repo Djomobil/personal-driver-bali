@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2f25"/>
+      <stop offset="0.45" stop-color="#155343"/>
+      <stop offset="0.75" stop-color="#2a7a5c"/>
+      <stop offset="1" stop-color="#e8c98a"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f5dfae" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#e8c98a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#e8c98a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7e7c3"/>
+      <stop offset="1" stop-color="#dfa74e"/>
+    </linearGradient>
+    <linearGradient id="agung" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123f32"/>
+      <stop offset="1" stop-color="#0d332a"/>
+    </linearGradient>
+    <linearGradient id="hillsFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#175646"/>
+      <stop offset="1" stop-color="#10453a"/>
+    </linearGradient>
+    <linearGradient id="terr1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f8a60"/>
+      <stop offset="1" stop-color="#1c6549"/>
+    </linearGradient>
+    <linearGradient id="terr2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#256f50"/>
+      <stop offset="1" stop-color="#164f3d"/>
+    </linearGradient>
+    <linearGradient id="terr3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a5a44"/>
+      <stop offset="1" stop-color="#0e3b2e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="1150" cy="430" r="330" fill="url(#sunGlow)"/>
+  <circle cx="1150" cy="430" r="120" fill="url(#sun)"/>
+
+  <!-- Mount Agung -->
+  <path d="M520 560 L860 260 Q880 245 900 260 L1240 560 Z" fill="url(#agung)"/>
+  <path d="M820 300 L860 264 Q880 250 898 264 L940 300 L900 330 L870 312 L845 332 Z" fill="#e8c98a" opacity="0.5"/>
+
+  <!-- far hills -->
+  <path d="M0 600 Q220 480 480 570 Q700 640 900 590 Q1180 530 1380 590 Q1500 620 1600 585 L1600 900 L0 900 Z" fill="url(#hillsFar)"/>
+
+  <!-- rice terraces -->
+  <path d="M0 660 Q260 590 560 645 Q900 705 1230 650 Q1440 618 1600 655 L1600 900 L0 900 Z" fill="url(#terr1)"/>
+  <path d="M0 660 Q260 590 560 645 Q900 705 1230 650 Q1440 618 1600 655" fill="none" stroke="#e8c98a" stroke-width="3" opacity="0.35"/>
+  <path d="M0 730 Q300 665 640 715 Q980 762 1300 718 Q1470 695 1600 722 L1600 900 L0 900 Z" fill="url(#terr2)"/>
+  <path d="M0 730 Q300 665 640 715 Q980 762 1300 718 Q1470 695 1600 722" fill="none" stroke="#e8c98a" stroke-width="3" opacity="0.28"/>
+  <path d="M0 805 Q340 745 700 790 Q1040 830 1360 792 Q1500 776 1600 796 L1600 900 L0 900 Z" fill="url(#terr3)"/>
+  <path d="M0 805 Q340 745 700 790 Q1040 830 1360 792 Q1500 776 1600 796" fill="none" stroke="#e8c98a" stroke-width="3" opacity="0.22"/>
+
+  <!-- palms left -->
+  <g fill="#092b21">
+    <path d="M170 900 L185 690 Q187 680 193 690 L205 900 Z"/>
+    <g transform="translate(190 690)">
+      <path d="M0 0 Q-70 -40 -130 -18 Q-70 -62 0 -22 Z"/>
+      <path d="M0 0 Q-45 -80 -105 -95 Q-38 -108 8 -28 Z"/>
+      <path d="M0 0 Q10 -95 -30 -150 Q42 -110 12 -18 Z"/>
+      <path d="M0 0 Q60 -75 125 -80 Q62 -32 6 -8 Z"/>
+      <path d="M0 0 Q75 -25 130 10 Q68 22 2 6 Z"/>
+    </g>
+    <path d="M85 900 L96 740 Q98 732 103 740 L112 900 Z"/>
+    <g transform="translate(99 740) scale(0.72)">
+      <path d="M0 0 Q-70 -40 -130 -18 Q-70 -62 0 -22 Z"/>
+      <path d="M0 0 Q-45 -80 -105 -95 Q-38 -108 8 -28 Z"/>
+      <path d="M0 0 Q10 -95 -30 -150 Q42 -110 12 -18 Z"/>
+      <path d="M0 0 Q60 -75 125 -80 Q62 -32 6 -8 Z"/>
+      <path d="M0 0 Q75 -25 130 10 Q68 22 2 6 Z"/>
+    </g>
+  </g>
+
+  <!-- palm right -->
+  <g fill="#092b21">
+    <path d="M1478 900 L1464 665 Q1462 655 1456 665 L1444 900 Z"/>
+    <g transform="translate(1460 665) scale(1.1 1.1)">
+      <path d="M0 0 Q70 -40 130 -18 Q70 -62 0 -22 Z"/>
+      <path d="M0 0 Q45 -80 105 -95 Q38 -108 -8 -28 Z"/>
+      <path d="M0 0 Q-10 -95 30 -150 Q-42 -110 -12 -18 Z"/>
+      <path d="M0 0 Q-60 -75 -125 -80 Q-62 -32 -6 -8 Z"/>
+      <path d="M0 0 Q-75 -25 -130 10 Q-68 22 -2 6 Z"/>
+    </g>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#0b2f25" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M370 260 Q385 246 400 260 Q415 246 430 260"/>
+    <path d="M450 310 Q462 299 474 310 Q486 299 498 310"/>
+    <path d="M310 340 Q320 331 330 340 Q340 331 350 340"/>
+  </g>
+</svg>

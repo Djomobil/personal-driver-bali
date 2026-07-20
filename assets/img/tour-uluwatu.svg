@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a2f4f"/>
+      <stop offset="0.45" stop-color="#c96f2f"/>
+      <stop offset="0.8" stop-color="#e8a54b"/>
+      <stop offset="1" stop-color="#f2d795"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9b8" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffe9b8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d98a48"/>
+      <stop offset="1" stop-color="#7a4030"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+  <circle cx="150" cy="150" r="95" fill="url(#glow)"/>
+  <circle cx="150" cy="150" r="30" fill="#ffe9b8"/>
+
+  <!-- sea -->
+  <rect y="168" width="400" height="92" fill="url(#sea)"/>
+  <g stroke="#ffdf9e" stroke-width="2" opacity="0.6" stroke-linecap="round">
+    <path d="M120 185 H180"/><path d="M135 196 H175"/><path d="M128 207 H162"/>
+    <path d="M60 190 H88"/><path d="M230 200 H262"/>
+  </g>
+
+  <!-- cliff -->
+  <path d="M400 260 L400 96 L342 100 L330 118 L318 116 L306 150 L290 160 L282 190 L262 214 L252 260 Z" fill="#2b1526"/>
+
+  <!-- temple pagoda on cliff -->
+  <g fill="#2b1526">
+    <rect x="346" y="72" width="30" height="26"/>
+    <path d="M338 74 L384 74 L361 58 Z"/>
+    <path d="M342 60 L380 60 L361 46 Z"/>
+    <path d="M348 48 L374 48 L361 34 Z"/>
+    <path d="M353 36 L369 36 L361 24 Z"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#2b1526" stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M70 70 Q78 62 86 70 Q94 62 102 70"/>
+    <path d="M110 96 Q117 89 124 96 Q131 89 138 96"/>
+    <path d="M52 108 Q58 102 64 108 Q70 102 76 108"/>
+  </g>
+</svg>

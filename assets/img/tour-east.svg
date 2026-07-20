@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#274a68"/>
+      <stop offset="0.5" stop-color="#7a6d8c"/>
+      <stop offset="0.8" stop-color="#e0a184"/>
+      <stop offset="1" stop-color="#f2d795"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9b8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe9b8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#43355088"/>
+      <stop offset="0" stop-color="#433550"/>
+      <stop offset="1" stop-color="#241b2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+
+  <!-- volcano between the gates -->
+  <circle cx="200" cy="128" r="90" fill="url(#glow)"/>
+  <path d="M96 190 L186 84 Q200 70 214 84 L304 190 Z" fill="#3b3050"/>
+  <path d="M172 100 L186 86 Q200 74 213 86 L228 100 L206 118 L186 106 Z" fill="#f2d795" opacity="0.55"/>
+  <circle cx="200" cy="96" r="17" fill="#ffe9b8"/>
+
+  <!-- floor -->
+  <rect y="190" width="400" height="70" fill="url(#floor)"/>
+  <path d="M140 200 Q200 214 260 200 L260 208 Q200 222 140 208 Z" fill="#f2d795" opacity="0.25"/>
+
+  <!-- candi bentar (split gate) silhouettes -->
+  <g fill="#1c1428">
+    <path d="M60 260 L60 200 L64 196 L64 178 L70 172 L70 152 L78 144 L78 122 L88 112 L88 92 L100 80 L106 74 L112 80 L118 92 L120 112 L124 122 L126 144 L130 152 L132 172 L134 178 L136 196 L138 200 L140 260 Z"/>
+    <path d="M340 260 L340 200 L336 196 L336 178 L330 172 L330 152 L322 144 L322 122 L312 112 L312 92 L300 80 L294 74 L288 80 L282 92 L280 112 L276 122 L274 144 L270 152 L268 172 L266 178 L264 196 L262 200 L260 260 Z"/>
+  </g>
+  <!-- gate steps -->
+  <g fill="#1c1428">
+    <rect x="52" y="238" width="96" height="8" rx="2"/>
+    <rect x="252" y="238" width="96" height="8" rx="2"/>
+    <rect x="46" y="248" width="108" height="12" rx="2"/>
+    <rect x="246" y="248" width="108" height="12" rx="2"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#1c1428" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M150 46 Q157 39 164 46 Q171 39 178 46"/>
+    <path d="M230 58 Q236 52 242 58 Q248 52 254 58"/>
+  </g>
+</svg>

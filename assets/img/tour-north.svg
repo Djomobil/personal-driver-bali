@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3d2"/>
+      <stop offset="1" stop-color="#63a98c"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e5a45"/>
+      <stop offset="1" stop-color="#123c2c"/>
+    </linearGradient>
+    <linearGradient id="fall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef7f0"/>
+      <stop offset="1" stop-color="#a8d8c2"/>
+    </linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fc4a8"/>
+      <stop offset="1" stop-color="#2e6e57"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+
+  <!-- canyon walls -->
+  <path d="M0 0 L150 0 L138 40 L146 80 L134 130 L142 170 L130 260 L0 260 Z" fill="url(#rock)"/>
+  <path d="M400 0 L250 0 L262 44 L254 86 L266 134 L256 176 L268 260 L400 260 Z" fill="url(#rock)"/>
+
+  <!-- waterfall -->
+  <path d="M168 0 L232 0 L228 190 L172 190 Z" fill="url(#fall)"/>
+  <g stroke="#ffffff" stroke-width="3" opacity="0.5" stroke-linecap="round">
+    <path d="M182 12 L180 176"/><path d="M200 8 L200 180"/><path d="M218 14 L220 174"/>
+  </g>
+
+  <!-- pool + mist -->
+  <rect y="190" width="400" height="70" fill="url(#pool)"/>
+  <ellipse cx="200" cy="196" rx="70" ry="14" fill="#ffffff" opacity="0.55"/>
+  <ellipse cx="200" cy="204" rx="110" ry="12" fill="#ffffff" opacity="0.3"/>
+  <g stroke="#dff2e6" stroke-width="2" opacity="0.6" stroke-linecap="round">
+    <path d="M80 226 H130"/><path d="M270 232 H330"/><path d="M120 244 H180"/>
+  </g>
+
+  <!-- foliage frame -->
+  <g fill="#0d3327">
+    <path d="M0 0 Q60 26 44 78 Q20 46 0 44 Z"/>
+    <path d="M400 0 Q340 30 358 84 Q382 50 400 48 Z"/>
+    <path d="M-6 250 Q60 210 120 246 Q60 262 -6 262 Z"/>
+    <path d="M406 252 Q340 214 282 248 Q340 264 406 264 Z"/>
+    <ellipse cx="30" cy="120" rx="34" ry="14" transform="rotate(-28 30 120)"/>
+    <ellipse cx="372" cy="130" rx="34" ry="14" transform="rotate(28 372 130)"/>
+  </g>
+</svg>

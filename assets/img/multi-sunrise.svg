@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b2f55"/>
+      <stop offset="0.5" stop-color="#a4547a"/>
+      <stop offset="0.78" stop-color="#e0845c"/>
+      <stop offset="1" stop-color="#f2d795"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9b8" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffe9b8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="valley" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3457"/>
+      <stop offset="1" stop-color="#241b2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+
+  <!-- sun rising behind Agung -->
+  <circle cx="200" cy="150" r="105" fill="url(#glow)"/>
+  <circle cx="200" cy="150" r="34" fill="#ffe9b8"/>
+  <path d="M60 200 L180 92 Q200 76 220 92 L340 200 Z" fill="#3b2f55"/>
+  <path d="M164 106 L182 90 Q200 76 217 90 L236 106 L208 128 L184 112 Z" fill="#f2d795" opacity="0.5"/>
+
+  <!-- terraced valley foreground -->
+  <path d="M0 200 Q100 178 200 196 Q300 214 400 194 L400 260 L0 260 Z" fill="url(#valley)"/>
+  <path d="M0 200 Q100 178 200 196 Q300 214 400 194" fill="none" stroke="#f2d795" stroke-width="2" opacity="0.4"/>
+  <path d="M0 228 Q120 210 240 224 Q330 234 400 222 L400 260 L0 260 Z" fill="#1c1428"/>
+  <path d="M0 228 Q120 210 240 224 Q330 234 400 222" fill="none" stroke="#f2d795" stroke-width="2" opacity="0.3"/>
+
+  <!-- birds -->
+  <g stroke="#241b2e" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M92 66 Q99 59 106 66 Q113 59 120 66"/>
+    <path d="M300 52 Q307 45 314 52 Q321 45 328 52"/>
+  </g>
+</svg>

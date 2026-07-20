@@ -195,19 +195,35 @@ $lang_options
       <h2 class="center">$tours_h2</h2>
       <div class="cards-4">
         <article class="tour">
-          <div class="tour-head t-ubud"><span>$tour1_h3</span></div>
+          <div class="tour-head">
+            <img src="${prefix}$img_tour1" alt="$tour1_h3" width="400" height="260" loading="lazy"
+                 onerror="this.onerror=null;this.src='${prefix}assets/img/tour-ubud.svg';">
+            <span>$tour1_h3</span>
+          </div>
           <p>$tour1_p</p>
         </article>
         <article class="tour">
-          <div class="tour-head t-uluwatu"><span>$tour2_h3</span></div>
+          <div class="tour-head">
+            <img src="${prefix}$img_tour2" alt="$tour2_h3" width="400" height="260" loading="lazy"
+                 onerror="this.onerror=null;this.src='${prefix}assets/img/tour-uluwatu.svg';">
+            <span>$tour2_h3</span>
+          </div>
           <p>$tour2_p</p>
         </article>
         <article class="tour">
-          <div class="tour-head t-east"><span>$tour3_h3</span></div>
+          <div class="tour-head">
+            <img src="${prefix}$img_tour3" alt="$tour3_h3" width="400" height="260" loading="lazy"
+                 onerror="this.onerror=null;this.src='${prefix}assets/img/tour-east.svg';">
+            <span>$tour3_h3</span>
+          </div>
           <p>$tour3_p</p>
         </article>
         <article class="tour">
-          <div class="tour-head t-north"><span>$tour4_h3</span></div>
+          <div class="tour-head">
+            <img src="${prefix}$img_tour4" alt="$tour4_h3" width="400" height="260" loading="lazy"
+                 onerror="this.onerror=null;this.src='${prefix}assets/img/tour-north.svg';">
+            <span>$tour4_h3</span>
+          </div>
           <p>$tour4_p</p>
         </article>
       </div>
@@ -215,20 +231,38 @@ $lang_options
 
       <h2 class="center subheading">$multi_h2</h2>
       <div class="cards-3">
-        <article class="card">
-          <span class="day-badge">$multi1_days</span>
-          <h3>$multi1_h3</h3>
-          <p>$multi1_p</p>
+        <article class="tour multi">
+          <div class="tour-head">
+            <img src="${prefix}$img_multi1" alt="$multi1_h3" width="400" height="260" loading="lazy"
+                 onerror="this.onerror=null;this.src='${prefix}assets/img/multi-sunrise.svg';">
+            <span class="day-badge">$multi1_days</span>
+          </div>
+          <div class="tour-body">
+            <h3>$multi1_h3</h3>
+            <p>$multi1_p</p>
+          </div>
         </article>
-        <article class="card">
-          <span class="day-badge">$multi2_days</span>
-          <h3>$multi2_h3</h3>
-          <p>$multi2_p</p>
+        <article class="tour multi">
+          <div class="tour-head">
+            <img src="${prefix}$img_multi2" alt="$multi2_h3" width="400" height="260" loading="lazy"
+                 onerror="this.onerror=null;this.src='${prefix}assets/img/multi-best.svg';">
+            <span class="day-badge">$multi2_days</span>
+          </div>
+          <div class="tour-body">
+            <h3>$multi2_h3</h3>
+            <p>$multi2_p</p>
+          </div>
         </article>
-        <article class="card">
-          <span class="day-badge">$multi3_days</span>
-          <h3>$multi3_h3</h3>
-          <p>$multi3_p</p>
+        <article class="tour multi">
+          <div class="tour-head">
+            <img src="${prefix}$img_multi3" alt="$multi3_h3" width="400" height="260" loading="lazy"
+                 onerror="this.onerror=null;this.src='${prefix}assets/img/multi-island.svg';">
+            <span class="day-badge">$multi3_days</span>
+          </div>
+          <div class="tour-body">
+            <h3>$multi3_h3</h3>
+            <p>$multi3_p</p>
+          </div>
         </article>
       </div>
     </div>

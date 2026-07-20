@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c8e6c0"/>
+      <stop offset="0.55" stop-color="#8fce9d"/>
+      <stop offset="1" stop-color="#e8c98a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3d0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff3d0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="t1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#57a86b"/>
+      <stop offset="1" stop-color="#2f7d4f"/>
+    </linearGradient>
+    <linearGradient id="t2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f8f58"/>
+      <stop offset="1" stop-color="#256b41"/>
+    </linearGradient>
+    <linearGradient id="t3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c744646"/>
+      <stop offset="0" stop-color="#2c7446"/>
+      <stop offset="1" stop-color="#14503f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+  <circle cx="320" cy="58" r="85" fill="url(#glow)"/>
+  <circle cx="320" cy="58" r="26" fill="#f2d795"/>
+
+  <!-- far jungle hill -->
+  <path d="M0 120 Q90 78 190 108 Q300 138 400 100 L400 260 L0 260 Z" fill="#3a8a5c"/>
+
+  <!-- terraces -->
+  <path d="M0 150 Q120 122 240 145 Q330 160 400 142 L400 260 L0 260 Z" fill="url(#t1)"/>
+  <path d="M0 150 Q120 122 240 145 Q330 160 400 142" fill="none" stroke="#eddfae" stroke-width="2" opacity="0.55"/>
+  <path d="M0 185 Q140 158 270 180 Q350 192 400 178 L400 260 L0 260 Z" fill="url(#t2)"/>
+  <path d="M0 185 Q140 158 270 180 Q350 192 400 178" fill="none" stroke="#eddfae" stroke-width="2" opacity="0.45"/>
+  <path d="M0 222 Q160 198 300 216 Q360 223 400 214 L400 260 L0 260 Z" fill="url(#t3)"/>
+  <path d="M0 222 Q160 198 300 216 Q360 223 400 214" fill="none" stroke="#eddfae" stroke-width="2" opacity="0.35"/>
+
+  <!-- palm -->
+  <g fill="#123c2c">
+    <path d="M58 260 L66 150 Q67 145 70 150 L76 260 Z"/>
+    <g transform="translate(68 150) scale(0.8)">
+      <path d="M0 0 Q-55 -32 -105 -14 Q-55 -50 0 -18 Z"/>
+      <path d="M0 0 Q-35 -64 -85 -76 Q-30 -86 6 -22 Z"/>
+      <path d="M0 0 Q8 -76 -24 -120 Q34 -88 10 -14 Z"/>
+      <path d="M0 0 Q48 -60 100 -64 Q50 -26 5 -6 Z"/>
+      <path d="M0 0 Q60 -20 104 8 Q54 18 2 5 Z"/>
+    </g>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#2c5c40" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M120 55 Q127 48 134 55 Q141 48 148 55"/>
+    <path d="M158 75 Q164 69 170 75 Q176 69 182 75"/>
+  </g>
+</svg>

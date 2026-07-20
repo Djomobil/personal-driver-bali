@@ -38,11 +38,21 @@ il faut un calendrier ou du paiement en ligne, il suffira de brancher un service
    (et sur cette branche de développement, pour valider avant fusion).
 3. Site : **https://djomobil.github.io/personal-driver-bali/**
 
-## 📸 Ajouter la vraie photo de Ketut
+## 📸 Images : illustrations intégrées + vraies photos
 
-WhatsApp n'expose pas publiquement les photos de profil (API privée) ; le site utilise un
-avatar de secours. Pour afficher la vraie photo : enregistrer une image carrée (≥ 600×600 px)
-sous `assets/ketut.jpg`, commit, push. Les 5 pages l'utiliseront automatiquement.
+Le site est livré avec un **système d'illustrations « travel poster »** cohérent
+(`assets/img/*.svg`) : héro panoramique, 4 excursions, 3 circuits multi-jours. Les vraies
+photos sont **prioritaires** dès qu'elles existent :
+
+1. Déposer les photos dans `assets/photos/` avec ces noms exacts :
+   `ubud.jpg`, `uluwatu.jpg`, `east-bali.jpg`, `north-bali.jpg`,
+   `multi-sunrise.jpg`, `multi-best.jpg`, `multi-island.jpg`
+   (JPEG ~1200×780, < 300 Ko recommandé).
+2. Relancer `python3 tools/build.py` — le générateur détecte chaque photo présente et
+   l'utilise à la place de l'illustration correspondante.
+3. Pour le portrait de Ketut : `assets/ketut.jpg` (carré, ≥ 600×600 px), utilisé
+   automatiquement sans rebuild. WhatsApp n'expose pas les photos de profil publiquement
+   (API privée), d'où cet emplacement manuel.
 
 L'image de partage réseaux sociaux (`assets/og-image.png`) est générée depuis
 `tools/og-source.html` (capture Chromium 1200×630).

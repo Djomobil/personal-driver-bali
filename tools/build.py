@@ -32,6 +32,28 @@ def lang_url(code: str) -> str:
     return BASE if code == "en" else f"{BASE}{code}/"
 
 
+# (placeholder, real photo, illustrated fallback) — the photo wins if present
+IMAGES = [
+    ("img_tour1", "ubud", "tour-ubud"),
+    ("img_tour2", "uluwatu", "tour-uluwatu"),
+    ("img_tour3", "east-bali", "tour-east"),
+    ("img_tour4", "north-bali", "tour-north"),
+    ("img_multi1", "multi-sunrise", "multi-sunrise"),
+    ("img_multi2", "multi-best", "multi-best"),
+    ("img_multi3", "multi-island", "multi-island"),
+]
+
+
+def image_sources() -> dict:
+    out = {}
+    for key, photo, svg in IMAGES:
+        if (ROOT / "assets" / "photos" / f"{photo}.jpg").exists():
+            out[key] = f"assets/photos/{photo}.jpg"
+        else:
+            out[key] = f"assets/img/{svg}.svg"
+    return out
+
+
 def build():
     template = Template((ROOT / "tools" / "template.html").read_text(encoding="utf-8"))
     langs = {
@@ -85,6 +107,7 @@ def build():
         values.pop("faq")
         for key in ("wa_generic", "wa_book", "wa_price1", "wa_price2", "wa_price3", "wa_price4"):
             values[key] = quote(t[key], safe="")
+        values.update(image_sources())
         values.update(
             prefix=prefix,
             base=BASE,

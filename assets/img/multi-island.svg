@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b6a6a"/>
+      <stop offset="1" stop-color="#0e3b46"/>
+    </linearGradient>
+    <linearGradient id="isle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#57a86b"/>
+      <stop offset="1" stop-color="#2f7d4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sea)"/>
+  <g stroke="#8fd4c8" stroke-width="1.6" opacity="0.35" stroke-linecap="round">
+    <path d="M30 40 H62"/><path d="M340 210 H372"/><path d="M40 220 H78"/><path d="M330 36 H366"/>
+  </g>
+
+  <!-- stylized Bali island -->
+  <path d="M96 148 Q88 118 118 104 Q142 92 166 98 Q186 84 214 88 Q246 90 268 104 Q300 96 318 112 Q338 128 326 150 Q334 168 316 178 Q300 190 278 184 Q262 196 240 190 Q222 200 202 192 Q178 198 162 186 Q136 188 122 172 Q100 168 96 148 Z" fill="url(#isle)" stroke="#e8c98a" stroke-width="3"/>
+
+  <!-- Nusa Penida -->
+  <path d="M296 208 Q292 196 306 192 Q322 186 334 194 Q344 202 336 212 Q324 220 310 216 Q300 216 296 208 Z" fill="url(#isle)" stroke="#e8c98a" stroke-width="2.4"/>
+
+  <!-- volcano marks -->
+  <path d="M236 108 L252 88 L268 108 Z" fill="#123c2c"/>
+  <path d="M188 112 L200 96 L212 112 Z" fill="#123c2c"/>
+
+  <!-- dashed route -->
+  <path d="M150 172 Q120 150 138 126 Q158 104 198 118 Q240 130 262 118 Q292 104 306 130 Q316 152 292 166 Q260 184 224 172 Q190 162 150 172 Z"
+        fill="none" stroke="#f2d795" stroke-width="3.4" stroke-dasharray="10 8" stroke-linecap="round"/>
+
+  <!-- stop dots -->
+  <g fill="#f2d795" stroke="#0e3b46" stroke-width="2">
+    <circle cx="150" cy="172" r="6"/>
+    <circle cx="138" cy="126" r="6"/>
+    <circle cx="198" cy="118" r="6"/>
+    <circle cx="262" cy="118" r="6"/>
+    <circle cx="306" cy="130" r="6"/>
+    <circle cx="292" cy="166" r="6"/>
+  </g>
+
+  <!-- car marker -->
+  <g transform="translate(150 172)">
+    <circle r="14" fill="#25d366"/>
+    <g transform="translate(-8 -6)" fill="#ffffff">
+      <path d="M1 8 L3 3 Q3.6 1.6 5 1.6 L11 1.6 Q12.4 1.6 13 3 L15 8 L15 11 Q15 12 14 12 L13 12 Q12 12 12 11 L12 10 L4 10 L4 11 Q4 12 3 12 L2 12 Q1 12 1 11 Z"/>
+      <circle cx="4.6" cy="10.4" r="1.6"/>
+      <circle cx="11.4" cy="10.4" r="1.6"/>
+    </g>
+  </g>
+
+  <!-- compass -->
+  <g transform="translate(354 52)" stroke="#e8c98a" fill="none" stroke-width="2.4">
+    <circle r="18"/>
+    <path d="M0 -12 L5 6 L0 2 L-5 6 Z" fill="#e8c98a" stroke="none"/>
+  </g>
+</svg>
