@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="'Plus Jakarta Sans','Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12555c"/>
+      <stop offset="1" stop-color="#0b3a46"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4d9d68"/>
+      <stop offset="0.55" stop-color="#2f7d4f"/>
+      <stop offset="1" stop-color="#1f6244"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#04211a" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#sea)"/>
+  <g stroke="#7fc9c0" stroke-width="1.5" opacity="0.28" stroke-linecap="round">
+    <path d="M40 80 H80"/><path d="M905 560 H945"/><path d="M60 560 H100"/><path d="M900 60 H940"/>
+    <path d="M120 340 H150"/><path d="M880 300 H915"/>
+  </g>
+
+  <!-- ================= BALI ================= -->
+  <g filter="url(#soft)">
+    <path d="M78 300
+             Q 70 268 100 252 Q 128 238 168 240 Q 210 228 258 218 Q 310 204 366 196
+             Q 420 186 470 180 Q 530 168 590 162 Q 650 152 706 164 Q 762 148 806 170
+             Q 852 154 876 190 Q 898 222 872 246 Q 850 268 818 274 Q 792 292 760 296
+             Q 726 312 692 310 Q 660 330 626 328 Q 596 344 566 340 Q 540 356 512 350
+             Q 490 366 466 358 Q 440 372 416 362 Q 386 374 358 364 Q 326 372 300 360
+             Q 268 366 244 352 Q 208 356 184 340 Q 144 342 118 330 Q 88 324 78 300 Z"
+          fill="url(#land)" stroke="#e8c98a" stroke-width="3.5"/>
+    <!-- Bukit peninsula -->
+    <path d="M500 352 Q 492 372 502 388 Q 486 400 490 420 Q 500 442 530 446 Q 566 450 592 436
+             Q 612 424 606 404 Q 616 388 600 374 Q 584 360 560 358 Q 530 348 500 352 Z"
+          fill="url(#land)" stroke="#e8c98a" stroke-width="3.5"/>
+    <!-- Nusa Penida -->
+    <path d="M700 480 Q 694 462 716 454 Q 742 444 768 452 Q 792 460 786 480 Q 778 498 748 500 Q 716 502 700 480 Z"
+          fill="url(#land)" stroke="#e8c98a" stroke-width="3"/>
+  </g>
+
+  <!-- volcanoes -->
+  <g fill="#123c2c">
+    <path d="M596 200 L622 164 L648 200 Z"/>
+    <path d="M672 214 L706 168 L740 214 Z"/>
+  </g>
+  <text x="622" y="152" font-size="15" fill="#cfe8d8" text-anchor="middle" font-style="italic">Mt Batur</text>
+  <text x="707" y="156" font-size="15" fill="#cfe8d8" text-anchor="middle" font-style="italic">Mt Agung</text>
+
+  <!-- dashed routes from airport -->
+  <g fill="none" stroke="#f2d795" stroke-width="3" stroke-dasharray="9 8" stroke-linecap="round" opacity="0.85">
+    <path d="M508 344 Q 512 300 488 268 Q 476 246 480 232"/>          <!-- to Ubud -->
+    <path d="M508 344 Q 510 382 528 402"/>                            <!-- to Uluwatu -->
+    <path d="M508 344 Q 600 330 668 300 Q 726 276 782 252"/>          <!-- to East -->
+    <path d="M508 344 Q 470 288 442 252 Q 420 224 408 208"/>          <!-- to North lakes -->
+    <path d="M560 402 Q 630 440 700 476"/>                            <!-- boat to Penida -->
+  </g>
+
+  <!-- ============ markers ============ -->
+  <!-- airport -->
+  <g transform="translate(508 344)">
+    <circle r="13" fill="#25d366" stroke="#0e3b2e" stroke-width="3"/>
+    <text x="0" y="5" font-size="13" text-anchor="middle" fill="#0e3b2e" font-weight="800">✈</text>
+  </g>
+  <text x="524" y="336" font-size="16" fill="#fff" font-weight="800">DPS Airport</text>
+
+  <!-- south zone (gold) -->
+  <g fill="#e8c98a" stroke="#0e3b2e" stroke-width="2">
+    <circle cx="452" cy="330" r="7"/>   <!-- Canggu -->
+    <circle cx="472" cy="342" r="7"/>   <!-- Seminyak -->
+    <circle cx="548" cy="352" r="7"/>   <!-- Sanur -->
+    <circle cx="530" cy="418" r="7"/>   <!-- Uluwatu -->
+    <circle cx="580" cy="420" r="7"/>   <!-- Nusa Dua -->
+  </g>
+  <text x="443" y="318" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Canggu</text>
+  <text x="463" y="360" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Seminyak</text>
+  <text x="562" y="358" font-size="15" fill="#fff" font-weight="700">Sanur</text>
+  <text x="518" y="438" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Uluwatu</text>
+  <text x="592" y="434" font-size="15" fill="#fff" font-weight="700">Nusa Dua</text>
+
+  <!-- center zone (light green) -->
+  <g fill="#9fd4a8" stroke="#0e3b2e" stroke-width="2">
+    <circle cx="480" cy="228" r="7"/>   <!-- Ubud -->
+    <circle cx="497" cy="196" r="7"/>   <!-- Tegalalang -->
+  </g>
+  <text x="496" y="240" font-size="16" fill="#fff" font-weight="800">Ubud</text>
+  <text x="510" y="192" font-size="15" fill="#fff" font-weight="700">Tegalalang</text>
+
+  <!-- east zone (orange) -->
+  <g fill="#e8a54b" stroke="#0e3b2e" stroke-width="2">
+    <circle cx="700" cy="270" r="7"/>   <!-- Sidemen -->
+    <circle cx="782" cy="252" r="7"/>   <!-- Tirta Gangga -->
+    <circle cx="820" cy="230" r="7"/>   <!-- Lempuyang -->
+    <circle cx="810" cy="196" r="7"/>   <!-- Amed -->
+  </g>
+  <text x="688" y="292" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Sidemen</text>
+  <text x="774" y="274" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Tirta Gangga</text>
+  <text x="834" y="234" font-size="15" fill="#fff" font-weight="700">Lempuyang</text>
+  <text x="824" y="192" font-size="15" fill="#fff" font-weight="700">Amed</text>
+
+  <!-- north zone (teal) -->
+  <g fill="#8ed6c8" stroke="#0e3b2e" stroke-width="2">
+    <circle cx="408" cy="204" r="7"/>   <!-- Bratan / Bedugul -->
+    <circle cx="372" cy="188" r="7"/>   <!-- Munduk -->
+    <circle cx="452" cy="176" r="7"/>   <!-- Sekumpul -->
+    <circle cx="360" cy="230" r="7"/>   <!-- Jatiluwih -->
+    <circle cx="392" cy="160" r="7"/>   <!-- Lovina -->
+  </g>
+  <text x="396" y="222" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Ulun Danu</text>
+  <text x="360" y="180" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Munduk</text>
+  <text x="464" y="172" font-size="15" fill="#fff" font-weight="700">Sekumpul</text>
+  <text x="348" y="246" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Jatiluwih</text>
+  <text x="384" y="148" font-size="15" fill="#fff" font-weight="700" text-anchor="end">Lovina</text>
+
+  <!-- west -->
+  <circle cx="160" cy="264" r="7" fill="#c9b8e8" stroke="#0e3b2e" stroke-width="2"/>
+  <text x="150" y="288" font-size="15" fill="#fff" font-weight="700">West Bali National Park</text>
+
+  <!-- Nusa Penida -->
+  <circle cx="716" cy="478" r="7" fill="#e8c98a" stroke="#0e3b2e" stroke-width="2"/>
+  <text x="730" y="496" font-size="15" fill="#fff" font-weight="700">Nusa Penida</text>
+  <text x="640" y="466" font-size="13" fill="#cfe8d8" font-style="italic">⛵ boat day trip</text>
+
+  <!-- title + compass -->
+  <text x="52" y="70" font-size="34" fill="#fff" font-weight="800" font-family="Georgia,serif">BALI</text>
+  <text x="52" y="96" font-size="16" fill="#e8c98a" font-weight="700" letter-spacing="2">PRIVATE DRIVER COVERAGE</text>
+  <g transform="translate(930 92)" stroke="#e8c98a" fill="none" stroke-width="2.6">
+    <circle r="24"/>
+    <path d="M0 -16 L7 9 L0 4 L-7 9 Z" fill="#e8c98a" stroke="none"/>
+    <text x="0" y="-32" font-size="14" fill="#e8c98a" text-anchor="middle" stroke="none" font-weight="700">N</text>
+  </g>
+
+  <!-- drive-time legend card -->
+  <g transform="translate(52 470)">
+    <rect x="0" y="0" width="300" height="130" rx="16" fill="#0e3b2e" opacity="0.88" stroke="#e8c98a" stroke-width="1.5"/>
+    <text x="20" y="30" font-size="15" fill="#e8c98a" font-weight="800">⏱ FROM DPS AIRPORT (approx.)</text>
+    <text x="20" y="56" font-size="14.5" fill="#faf7f0">Seminyak 30 min · Uluwatu 45 min</text>
+    <text x="20" y="80" font-size="14.5" fill="#faf7f0">Ubud 1 h 15 · Ulun Danu 2 h</text>
+    <text x="20" y="104" font-size="14.5" fill="#faf7f0">Amed 2 h 30 · Lovina 3 h</text>
+  </g>
+</svg>
